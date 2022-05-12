@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css" />
+	<title>Noble Producto</title>
+</head>
+<body class="bodyProducto">
+	<!-- fila de logo + nav --> 
+  <header>
+    <a href="../index.html"> <img class="logoMobile" src="../img/logo-blanco.png" alt="logo noble"></a>
+    <a href="../index.html"> <img class="logo" src="../img/logo-blanco-2.png" alt="logo noble"></a>
+    <input type="search" title="buscador" placeholder="Buscador..." class="buscador">
+    <nav>
+    <ul class="navList">
+      <li class="listaNav"><a class="navHead"  href="catalogo.html" title="productos" class="list">Catalogo</a></li>
+      <li class="listaNav"><a class="navHead"  href="contacto.html" title="contacto" class="list">Contacto</li>
+        <li class="listaNav"><a class="navHead"  href="cuenta.html" title="Cuenta" class="list"><img class="iconosNav" src="../img/usuario.png" alt=""> </a></li>
+				<li class="listaNav"><a class="navHead"  href="carrito.html" title="carrito" class="list"><img class="iconosNav" src="../img/carrito.png" alt=""></a></li>
+    </ul>
+  </nav>
+</header>
+        <section class="gridRuta">
+          <div class="ruta">
+              <ul>
+                <li class="rutaLista"><a href="catalogo.html">Catálogo</a></li>
+                <li class="rutaLista"><a href="catalogo.html">camperas</a></li>
+              </ul>
+            </div>
+          </section>
+            <section class="gridProducto">
+      <div class="contenedorProducto">
+            <div class="productoImagen">
+              <div>
+            <img class="imagenPrincipal" src="../img/modelo1.jpg" alt="Campera Blanca">
+             </div>
+             <div>
+            <img class="imagenSecundaria" src="../img/modelo2.jpg" alt="Campera blanca">
+            <img class="imagenSecundaria"  src="../img/modelo3.jpg" alt="Campera blanca">
+            <img class="imagenSecundaria"  src="../img/modelo4.jpg" alt="Campera blanca">
+          </div>
+        </div>
+      </section>
+        <section class="productoInformacion">
+          <div class="contenedoInformacion">
+          <div class="productoInfoHijo">
+            <h2>Producto</h2>
+            <p>$ 345,00</p>
+            <form action="">
+              <div class="infoColor">
+                <p>Color: </p>
+                <label class="checkbox1" for="black">
+                <input type="checkbox" name="black" id="black">
+                <span class="check1"></span>
+              </label>
+                <label class="checkbox2" for="red">
+                <input type="checkbox" name="rojo" id="red">
+                <span class="check2"></span>
+              </label>
+              </div>
+              <div class="infoCantidad">
+                <input class="numberBox" type="number" name="cantidad" id="cantidad">
+                <p>Precio total: <span class="precio">$ 345,00</span></p>
+              </div>
+              <div class="botonBox">
+                <input type="button" value="Añadir a favorito">
+                <input class="btn1"   type="button" value="Añadir al carrito">
+              </div>
+            </form>
+          </div>
+          <!--Falta agregar las opciónes "Materiales" y "Envio"-->
+          <div class="informacionProducto">
+            <h3>Acerca del Producto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur a est laudantium iusto. Saepe officiis quae nam deleniti omnis suscipit?</p>
+        </div>
+      </div> 
+    </section>
+        </section>
+        <section class="gridDestacado">
+          <!--darle estilo carrusel y agregar el doble de productos estilo mercadolibre-->
+          <div class="productosDestacados">
+            <h2>Destacado</h2>
+            <div class="productosImg">
+              <a href="producto.html"><img class="" src="../img/zapatilla2.jpg" alt="Zapatillas blanca"></a>
+                <a href="producto.html"><img src="../img/buzo1.PNG" alt="Buzo negro"></a>
+                  <a href="producto.html"><img class="borrar" src="../img/mochila1.jpg" alt="mochila blanca"></a>
+                    <a href="producto.html"><img class="" src="../img/chaleco1.PNG" alt="Chaleco negro"></a>
+                      <a href="producto.html"><img class="" src="../img/campera1.PNG" alt="Campera negra""></a>
+          </div>
+          </div>
+	<footer>
+    <section class="footer">
+     <div>
+        <a href="../index.html"><img src="../img/logo.png" alt="logo volver al inicio" width="100px"></a>
+     </div>
+     <div>
+		  <ul class="listaFooter">
+       <li>Insitucional</li>
+        <li>Quiénes somos</li>
+     </ul>
+    </div>
+    <div>
+     <ul class="listaFooter">
+       <li id>Ayuda</li>
+       <li>Preguntas frecuentes</li>
+       <li>Información</li>
+       <li>Rembolso</li>
+       <li>Arrempentimiento</li>
+      </ul>
+    </div>
+    <div>
+      <ul class="listaFooter">
+       <li>Redes Sociales</li>
+       <li>
+        <a class="listaFooter" href="https://www.instagram.com/" target="blank">Instagram</a> 
+       </li>
+       <li>
+         <a class="listaFooter" href="https://www.facebook.com/" target="blank">Facebook</a>
+       </li>
+      </ul>
+    </div>
+   <div class="contactoFooter">
+     <a href="https://web.whatsapp.com/" target="blank"><img class="iconos" src="../img/wapp.png" alt="whatsapp"></a>	
+     <a href=""><img class="iconos" src="../img/correo.png" alt="Correo"></a>
+     <a href=""><img class="iconos" src="../img/telefonoo.png" alt="Telefono"></a>
+   </div>
+  </section>
+  </footer>
+</body>
+</html>
