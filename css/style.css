@@ -10,16 +10,12 @@
         font: inherit;  
         vertical-align: baseline; 
  }
-
-/* body{
-    background-color:#24252A;
-} */
-a{
+a    {
     text-decoration: none;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
-header a, li, footer a{
+header a, li, footer a, .fontNav{
     font-family: "montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -39,42 +35,21 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
 
 }
-
-.navList li a:hover{
-    color: red;
-    cursor: pointer;
-}
-
-.navList li {
-    display: inline-block;
-    padding: 0px 30px;
-    list-style: none;
-    background-color: black;
-    
-}
-
 footer {
     background-color: black;
     width: 100%;
 }
 
-.buscador{
-    border: 10px white solid;
-    border-radius: 25px;
-    width: 20vw;
+.navbar-toggler{
+    background-color: rgb(255, 255, 255);
 }
-
-.logoMobile{
-    display: none;
-}
-
 .logo{
     width:250px ;
-    height: 80px; ;
+    height: 70px; ;
     padding: 1px;
     margin: 1px;
 
@@ -104,7 +79,22 @@ footer div a .iconos{
     font-size: 10px;
     padding: 10px;
 }
-
+.navbar-collapse {
+    display: flex;
+    flex-basis:auto;
+    justify-content: space-between;
+  }
+  .navbar{
+      width: 100%;
+  }
+  .navbar li a{
+      margin-left: 40px;
+      font-size: 20px;
+  }
+  .navbar li a:hover{
+      color: red;
+      cursor: pointer;
+  }
 /* UNIVERSAL */
 
 /* GRID */
@@ -205,7 +195,6 @@ Footer{
 }
 
 .cardImg{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
     margin: 0px;
     padding-left: 0px;
     width:100%;
@@ -223,6 +212,7 @@ Footer{
 }
 
 .cardBorder{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
     display: flex;
     justify-content: center;
     height: 200px;
@@ -723,6 +713,14 @@ Footer{
     
 /* MEDIA QUERIES */
 @media (max-width: 1276px){
+.logo{
+
+
+    width:250px ;
+    height: 70px; ;
+    padding: 1px;
+    margin: 1px;
+}
     /*CONTACTO */
 
 .boxMailMap{
@@ -744,16 +742,13 @@ Footer{
 
 @media screen and (max-width: 768px) {
     /* UNIVERSAL */
-   .buscador{
-       display: none;
-   }
 
-   .logo{
-       margin: 0;
-       padding: 0;
-       display: flex;
-       width: 90%;
-   }
+    .logo{
+        width:40vw ;
+        height: 70px; ;
+        padding: 0px;
+        margin: 0px;
+    }
     /* UNIVERSAL */
     /* INDEX */
     .cardPrincipal{
