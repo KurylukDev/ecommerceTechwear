@@ -11,18 +11,37 @@
   <body class="gridError">
     <!-- fila de logo + nav --> 
     <header>
-      <a href="../index.html"> <img class="logoMobile" src="../img/logo-blanco.webp" alt="logo noble"></a>
-      <a href="../index.html"> <img class="logo" src="../img/logo-blanco-2.webp" alt="logo noble"></a>
-      <input type="search" title="buscador" placeholder="Buscador..." class="buscador">
-      <nav>
-			<ul class="navList">
-				<li class="listaNav"><a class="navHead"  href="catalogo.html" title="productos" class="list">Catalogo</a></li>
-				<li class="listaNav"><a class="navHead"  href="contacto.html" title="contacto" class="list">Contacto</li>
-				<li class="listaNav"><a class="navHead"  href="cuenta.html" title="Cuenta" class="list"><img class="iconosNav" src="../img/usuario.webp" alt=""> </a></li>
-				<li class="listaNav"><a class="navHead"  href="carrito.html" title="carrito" class="list"><img class="iconosNav" src="../img/carrito.webp" alt=""></a></li>
-			</ul>
-		</nav>
-	</header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="img/logo-blanco-2.webp" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="d-flex navForm" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success " type="submit">Search</button>
+              </form>
+            <ul class="navbar-nav me-8 mb-2 mb-lg-2">
+              <li class="nav-item">
+                <a class="nav-link fontNav" href="pages/catalogo.html" title="carrito" class="list">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fontNav" href="pages/contacto.html" title="carrito" class="list">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link fontNav" href="pages/cuenta.html" title="carrito" class="list"><img class="iconosNav" src="img/usuario.webp" alt=""></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fontNav" href="pages/carrito.html" title="carrito" class="list"><img class="iconosNav" src="img/carrito.webp" alt=""></a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
   <section class="gridImg">
     <div class="contenedorError">
     <img class="error404" src="../img/Error404.webp" alt="Error404">
