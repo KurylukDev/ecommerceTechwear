@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 *{
-     
         margin: 0;  
         padding: 0;  
         border: 0;  
@@ -10,7 +9,7 @@
         font: inherit;  
         vertical-align: baseline; 
  }
-a    {
+a{
     text-decoration: none;
     color:rgb(255, 255, 255);
 }
@@ -24,11 +23,23 @@ header a, li, footer a, .fontNav{
     transition: .5s;
 }
 
-header .iconosNav{
+.iconosNav{
     width: 40px;
     height: 40px;
-    padding: 0;
+    padding: 1px;
     margin: 0;
+}
+.d-flex {
+    width: 30%;
+    margin: 0 auto;
+}
+.iconosNav:hover{
+    border-radius: 25%;
+    border: 1px red solid;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
 }
 
 header{
@@ -43,7 +54,16 @@ footer {
     background-color: black;
     width: 100%;
 }
+.btn-outline-success{
+    color: rgb(255, 255, 255);
+    border: 1px white solid;
 
+}
+
+.btn-outline-success:hover{
+    background-color: red;
+    border: 1px #ffffff solid;
+}
 .navbar-toggler{
     background-color: rgb(255, 255, 255);
 }
@@ -80,8 +100,7 @@ footer div a .iconos{
     padding: 10px;
 }
 .navbar-collapse {
-    display: flex;
-    flex-basis:auto;
+    text-align: center;
     justify-content: space-between;
   }
   .navbar{
@@ -847,7 +866,7 @@ Footer{
     margin: 0;
 }
 }
-@media (max-width: 555px){
+@media (max-width: 576px){
     /* UNIVERSAL */
     .contactoFooter{
         display: flex;
