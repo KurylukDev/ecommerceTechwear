@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 *{
-     
         margin: 0;  
         padding: 0;  
         border: 0;  
@@ -10,16 +9,12 @@
         font: inherit;  
         vertical-align: baseline; 
  }
-
-/* body{
-    background-color:#24252A;
-} */
 a{
     text-decoration: none;
-    color:black;
+    color:rgb(255, 255, 255);
 }
 
-header a, li, footer a{
+header a, li, footer a, .fontNav{
     font-family: "montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -28,53 +23,52 @@ header a, li, footer a{
     transition: .5s;
 }
 
-header .iconosNav{
+.iconosNav{
     width: 40px;
     height: 40px;
-    padding: 0;
+    padding: 1px;
     margin: 0;
+}
+.d-flex {
+    margin: 0 auto;
+}
+.iconosNav:hover{
+    border-radius: 25%;
+    border: 1px red solid;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
 
 }
-
-.navList li a:hover{
-    color: red;
-    cursor: pointer;
-}
-
-.navList li {
-    display: inline-block;
-    padding: 0px 30px;
-    list-style: none;
-    background-color: black;
-    
-}
-
 footer {
     background-color: black;
     width: 100%;
 }
+.btn-outline-success{
+    color: rgb(255, 255, 255);
+    border: 1px white solid;
 
-.buscador{
-    border: 10px white solid;
-    border-radius: 25px;
-    width: 20vw;
 }
 
-.logoMobile{
-    display: none;
+.btn-outline-success:hover{
+    background-color: red;
+    border: 1px #ffffff solid;
 }
-
+.navbar-toggler{
+    background-color: rgb(255, 255, 255);
+}
 .logo{
     width:250px ;
-    height: 80px;
+    height: 70px; ;
     padding: 1px;
     margin: 1px;
 
@@ -104,7 +98,21 @@ footer div a .iconos{
     font-size: 10px;
     padding: 10px;
 }
-
+.navbar-collapse {
+    text-align: center;
+    justify-content: space-between;
+  }
+  .navbar{
+      width: 100%;
+  }
+  .navbar li a{
+      margin-left: 40px;
+      font-size: 20px;
+  }
+  .navbar li a:hover{
+      color: red;
+      cursor: pointer;
+  }
 /* UNIVERSAL */
 
 /* GRID */
@@ -199,6 +207,7 @@ Footer{
 }
 .card{     
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 50px 0px 40px 0px;
     padding: 0;
@@ -222,7 +231,7 @@ Footer{
 }
 
 .cardBorder{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgb(255, 255, 255));
     display: flex;
     justify-content: center;
     height: 200px;
@@ -261,7 +270,7 @@ Footer{
 
 .mainCatalogo{
     display: flex;
-    justify-content: center;
+    justify-content: start;
 
 }
 
@@ -269,33 +278,34 @@ Footer{
      border-right: 1px grey solid;
      border-radius:2%;
      padding: 0px 0px 40px 0px;
-     margin: 0px 0px 40px 0px;
+     margin: 0px 5vw 40px 0px;
 }
 
 .listaCatalogo li{
+    display: flex;
+    justify-content: flex-start;
     font-family:"montserrat" serif ;
     font-size: 1.2em;
     color: black;
     list-style: none;
     margin: 10px;
 }
-.catalogo{
-    padding: 10px 20px 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 .producto{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
-    padding: 10px;
-    margin: 40px;
-    width:200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.342));
+    padding: 0px;
+    margin: 25px 10px;
+    width:225px;
     height: 250px;
     border:1px rgb(230, 230, 230) solid;
     border-radius:2%;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+@media (max-width: 497px){
+    .producto{
+       width: 80vw;
+    }
 }
 
 .listaGenero, .listaAesthetic, .listaNinja, .listaCyberpunk, .listaTalles, .listaColor{
@@ -723,6 +733,14 @@ Footer{
     
 /* MEDIA QUERIES */
 @media (max-width: 1276px){
+.logo{
+
+
+    width:250px ;
+    height: 70px; ;
+    padding: 1px;
+    margin: 1px;
+}
     /*CONTACTO */
 
 .boxMailMap{
@@ -744,16 +762,13 @@ Footer{
 
 @media screen and (max-width: 768px) {
     /* UNIVERSAL */
-   .buscador{
-       display: none;
-   }
 
-   .logo{
-       margin: 0;
-       padding: 0;
-       display: flex;
-       width: 90%;
-   }
+    .logo{
+        width:40vw ;
+        height: 70px; ;
+        padding: 0px;
+        margin: 0px;
+    }
     /* UNIVERSAL */
     /* INDEX */
     .cardPrincipal{
@@ -852,7 +867,7 @@ Footer{
     margin: 0;
 }
 }
-@media (max-width: 555px){
+@media (max-width: 576px){
     /* UNIVERSAL */
     .contactoFooter{
         display: flex;
@@ -940,6 +955,14 @@ Footer{
           margin: 0;
       }
 
+}
+
+@media (max-width: 991px){
+    .loginBox{
+        position: absolute;
+        top: 65%;
+        left: 50%;    
+    }
 }
 
 /* MEDIA QUERIES */
