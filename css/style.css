@@ -30,7 +30,6 @@ header a, li, footer a, .fontNav{
     margin: 0;
 }
 .d-flex {
-    width: 30%;
     margin: 0 auto;
 }
 .iconosNav:hover{
@@ -208,6 +207,7 @@ Footer{
 }
 .card{     
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 50px 0px 40px 0px;
     padding: 0;
@@ -231,7 +231,7 @@ Footer{
 }
 
 .cardBorder{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgb(255, 255, 255));
     display: flex;
     justify-content: center;
     height: 200px;
@@ -270,7 +270,7 @@ Footer{
 
 .mainCatalogo{
     display: flex;
-    justify-content: center;
+    justify-content: start;
 
 }
 
@@ -278,33 +278,34 @@ Footer{
      border-right: 1px grey solid;
      border-radius:2%;
      padding: 0px 0px 40px 0px;
-     margin: 0px 0px 40px 0px;
+     margin: 0px 5vw 40px 0px;
 }
 
 .listaCatalogo li{
+    display: flex;
+    justify-content: flex-start;
     font-family:"montserrat" serif ;
     font-size: 1.2em;
     color: black;
     list-style: none;
     margin: 10px;
 }
-.catalogo{
-    padding: 10px 20px 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 .producto{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
-    padding: 10px;
-    margin: 40px;
-    width:200px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.342));
+    padding: 0px;
+    margin: 25px 10px;
+    width:225px;
     height: 250px;
     border:1px rgb(230, 230, 230) solid;
     border-radius:2%;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+@media (max-width: 497px){
+    .producto{
+       width: 80vw;
+    }
 }
 
 .listaGenero, .listaAesthetic, .listaNinja, .listaCyberpunk, .listaTalles, .listaColor{
@@ -954,6 +955,14 @@ Footer{
           margin: 0;
       }
 
+}
+
+@media (max-width: 991px){
+    .loginBox{
+        position: absolute;
+        top: 65%;
+        left: 50%;    
+    }
 }
 
 /* MEDIA QUERIES */
