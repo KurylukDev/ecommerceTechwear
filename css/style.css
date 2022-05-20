@@ -276,6 +276,10 @@ Footer{
 
 }
 
+catalogo container{
+    width: 100%;
+    margin: 0 auto;
+}
  .listaCatalogo{
      border-right: 1px grey solid;
      border-radius:2%;
@@ -303,8 +307,17 @@ Footer{
     border-radius:2%;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
-
+@media (max-width: 553px){
+    .producto{
+       width: 40vw;
+    }
+}
 @media (max-width: 497px){
+    .producto{
+       width: 40vw;
+    }
+}
+@media (max-width: 479px){
     .producto{
        width: 80vw;
     }
