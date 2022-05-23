@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -43,11 +43,198 @@
         </div>
       </nav>
     </header>
-  <section class="gridImg">
-    <div class="contenedorError">
-    <img class="error404" src="../img/Error404.webp" alt="Error404">
-  </div>
-  </section>
+    <main class="m-5">
+      <div class="py-5 text-center">
+          <h2 class="titleCheckout text-dagner">Formulario de pago</h2>
+      </div>
+      <div class="row g-5">
+          <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="text-danger">Tu Carrito</span>
+                  <span class="badge bg-danger rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3 cartList">
+                  <li class="cartList list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                          <h6 class="my-0">Pantalon Samurai</h6>
+                          <small class="text-muted">L</small>
+                      </div>
+                      <span class="text-muted">150$</span>
+                  </li>
+                  <li class="cartList list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                          <h6 class="my-0">Campera White</h6>
+                          <small class="text-muted">L</small>
+                      </div>
+                      <span class="text-muted">350$</span>
+                  </li>
+                  <li class="cartList list-group-item d-flex justify-content-between lh-sm">
+                      <div>
+                          <h6 class="my-0">Zapatillas White</h6>
+                          <small class="text-muted">43</small>
+                      </div>
+                      <span class="text-muted">100$</span>
+                  </li>
+                  <li class="cartList list-group-item d-flex justify-content-between">
+                      <span>Total (USD)</span>
+                      <strong>600$</strong>
+                  </li>
+              </ul>
+  
+              <form class="card p-2">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Codigo de promoción">
+                      <button type="submit" class="btn btn-dark">Canjear</button>
+                  </div>
+              </form>
+          </div>
+          <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Datos de envio</h4>
+              <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                      <div class="col-sm-6">
+                          <label for="firstName" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="Anakin" value="" required>
+                          <div class="invalid-feedback">
+                              Nombre es requerido.
+                          </div>
+                      </div>
+  
+                      <div class="col-sm-6">
+                          <label for="lastName" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Skywalker" value="" required>
+                          <div class="invalid-feedback">
+                              Apellido es requerido.
+                          </div>
+                      </div>
+  
+  
+                      <div class="col-12">
+                        <label for="correo" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="correo" placeholder="TuJediSexy@gmail.com" required>
+                        <div class="invalid-feedback">
+                            Email es requerido.
+                        </div>
+                    </div>
+  
+                      <div class="col-12">
+                          <label for="address" class="form-label">Dirección</label>
+                          <input type="text" class="form-control" id="address" placeholder="Direccion" required>
+                          <div class="invalid-feedback">
+                              Dirección es requerido.
+                          </div>
+                      </div>
+  
+                      <div class="col-12">
+                          <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
+                          <input type="text" class="form-control" id="address2" placeholder="Piso y departamento">
+                      </div>
+  
+                      <div class="col-md-5">
+                          <label for="country" class="form-label">Pais</label>
+                          <select class="form-select" id="country" required>
+                              <option value="">Seleccionar...</option>
+                              <option>Argentina</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Por favor, indique un país válido.
+                          </div>
+                      </div>
+  
+                      <div class="col-md-4">
+                          <label for="state" class="form-label">Provincia</label>
+                          <select class="form-select" id="state" required>
+                              <option value="">Seleccionar...</option>
+                              <option>Caba</option>
+                              <option>Buenos Aires</option>
+                              <option>Mendoza</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Por favor, indique una provincia válido.
+                          </div>
+                      </div>
+  
+                      <div class="col-md-3">
+                          <label for="zip" class="form-label">Codigo Postal</label>
+                          <input type="text" class="form-control" id="zip" placeholder="" required>
+                          <div class="invalid-feedback">
+                              Codigo postal requerido.
+                          </div>
+                      </div>
+                  </div>
+  
+                  <hr class="my-4">
+  
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="same-address">
+                      <label class="form-check-label" for="same-address">La dirección de envío es la misma que la de facturación</label>
+                  </div>
+  
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="save-info">
+                      <label class="form-check-label" for="save-info">Guarde esta información para la próxima vez</label>
+                  </div>
+  
+                  <hr class="my-4">
+  
+                  <h4 class="mb-3">Opciones de pago</h4>
+  
+                  <div class="my-3">
+                      <div class="form-check">
+                          <input id="credito" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                          <label class="form-check-label" for="credit">Credito</label>
+                      </div>
+                      <div class="form-check">
+                          <input id="debito" name="paymentMethod" type="radio" class="form-check-input" required>
+                          <label class="form-check-label" for="debit">Debito</label>
+                      </div>
+                      <div class="form-check">
+                          <input id="mercadopago" name="paymentMethod" type="radio" class="form-check-input" required>
+                          <label class="form-check-label" for="paypal">MercadoPago</label>
+                      </div>
+                  </div>
+  
+                  <div class="row gy-3">
+                      <div class="col-md-6">
+                          <label for="cc-name" class="form-label">Nombre de la tarjeta</label>
+                          <input type="text" class="form-control" id="cc-name" placeholder="Nombre como figura en la tarjeta" required>
+                          <div class="invalid-feedback">
+                              Nombre requerido
+                          </div>
+                      </div>
+  
+                      <div class="col-md-6">
+                          <label for="cc-number" class="form-label">Numero de la tarjeta</label>
+                          <input type="text" class="form-control" id="cc-number" placeholder="5145 4215 4542" required>
+                          <div class="invalid-feedback">
+                              Numero de tarjeta requerido
+                          </div>
+                      </div>
+  
+                      <div class="col-md-3">
+                          <label for="cc-expiration" class="form-label">Vencimiento</label>
+                          <input type="text" class="form-control" id="cc-expiration" placeholder="02-28" required>
+                          <div class="invalid-feedback">
+                              Vencimiento requerido
+                          </div>
+                      </div>
+  
+                      <div class="col-md-3">
+                          <label for="cc-cvv" class="form-label">CVV</label>
+                          <input type="text" class="form-control" id="cc-cvv" placeholder="Como figura atras" required>
+                          <div class="invalid-feedback">
+                            Código de seguridad requerido
+                          </div>
+                      </div>
+                  </div>
+  
+                  <hr class="my-4">
+  
+                  <button class="w-75 btn btn-danger btn-lg" type="submit">Continuar con el pago</button>
+              </form>
+          </div>
+      </div>
+  </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 	<footer>
