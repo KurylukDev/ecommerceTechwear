@@ -42,6 +42,8 @@ header a, li, footer a, .fontNav{
 }
 
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,6 +52,8 @@ header{
 
 }
 footer {
+    z-index: 10000;
+    position:relative;
     background-color: black;
     width: 100%;
 }
@@ -168,6 +172,7 @@ Footer{
 
 /* INICIO INDEX */
 
+
 .cardPrincipal{
     display: flex;
     justify-content: center;
@@ -249,6 +254,8 @@ Footer{
 }
 
 .cardBorder p{
+    display: flex;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     font-size:1em;
     width: 100%;
@@ -258,39 +265,118 @@ Footer{
 }
 
 /* FINAL DE INDEX */
- /* INICIO DE CATÁLOGO */
-.tituloCatalogo{
-    font-family:"montserrat" serif ;
-    font-size:2rem;
-    width:100%;
-    margin: 20px 0px 0px 0px;
-    border-bottom:2px rgb(190, 190, 190) solid;
+/* INICIO DE CATÁLOGO */
 
+.ud{
+    display:flex;
+    flex-direction: row;
+}
+.uds{
+    padding: 0 5px;
 }
 
-.mainCatalogo{
-    display: flex;
-    justify-content: start;
 
+/* SIDEBAR */
+.wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
- .listaCatalogo{
-     border-right: 1px grey solid;
-     border-radius:2%;
-     padding: 0px 0px 40px 0px;
-     margin: 0px 5vw 40px 0px;
+.wrapper .toggled {
+    padding-left: 250px;
 }
 
-.listaCatalogo li{
-    display: flex;
-    justify-content: flex-start;
-    font-family:"montserrat" serif ;
-    font-size: 1.2em;
-    color: black;
+.sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper .toggled .sidebar-wrapper {
+    width: 250px;
+}
+
+.wrapper .toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin: 10px;
 }
 
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+/* sidebar */
+.dropdownColor{
+    width: 100%;
+    background-color: black;
+    border: #000;
+    color: #999999;
+    border-radius: 0;
+}
+.buttonEffect{
+    color: #999999;
+    
+}
+.buttonEffect:hover{
+    background-color: rgba(128, 128, 128, 0.377);
+    width: 100%;
+    border-radius: 0;
+}
 .producto{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.342));
     padding: 0px;
@@ -302,17 +388,6 @@ Footer{
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
-@media (max-width: 497px){
-    .producto{
-       width: 80vw;
-    }
-}
-
-.listaGenero, .listaAesthetic, .listaNinja, .listaCyberpunk, .listaTalles, .listaColor{
-    margin: 25px 0px 10px 0px;
-    border-bottom: 2px grey solid;
-}
-
 .numeros a{
     display: flex;
     justify-content: center;
@@ -322,15 +397,6 @@ Footer{
     margin: 0px 0px 10px 0px;
 
 }
-.listaSubTitulo{
-    font-size: 0.8em;
-    font-weight: bold;
-    padding: 0px 0px 10px 0px;
-}
-
-.filtroCatalogo{
-    display: none;
-    }
 /* FIN DE CATÁLOGO */
 /* INICIO DE CONTACTO */
 .mainInfo{
@@ -420,9 +486,9 @@ Footer{
 /* INICIO DE CUENTA */
 
 .contenedor{
-    background-color: black;
+    background-image: url(../img/backgroundlogin.webp);
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .contenedor img{
@@ -760,6 +826,12 @@ Footer{
     height: 200px;
 }
 
+@media (max-width: 789px){
+    .producto{
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* UNIVERSAL */
 
@@ -814,7 +886,7 @@ Footer{
     }
 
     .producto{
-        margin: 30px;
+        margin:10px auto;
     }
 
     /* PRODUCTO */
@@ -897,9 +969,9 @@ Footer{
     }
      /* CUENTA */
      .loginBox {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+        position: relative;
+        top: -50%;
+        left: 50%; 
         width: 20em;
         height: 400px;
         padding: 40px;
@@ -920,9 +992,6 @@ Footer{
       }
      .gridProductos{
       grid-area: productos;
-      }
-     .gridLista{
-      grid-area: lista;
       }
       .gridTituloFiltro{
        grid-area: titulo;
@@ -957,12 +1026,60 @@ Footer{
 
 }
 
-@media (max-width: 991px){
-    .loginBox{
-        position: absolute;
-        top: 65%;
-        left: 50%;    
+@media (max-width: 553px){
+    .producto{
+       width: 40vw;
+    }
+}
+@media (max-width: 497px){
+    .producto{
+       width: 40vw;
+    }
+}
+@media (max-width: 479px){
+    .producto{
+       width: 80vw;
     }
 }
 
+/* sidebar */
+@media (max-width: 991px){
+    .loginBox{
+        position: relative;
+        top: -50%;
+        left: 50%;    
+    }
+   .backgroundImg{
+       visibility: hidden;
+    }
+}
+
+@media(min-width:768px) {
+    .wrapper {
+        padding-left: 250px;
+    }
+
+    .wrapper .toggled {
+        padding-left: 0;
+    }
+
+    .sidebar-wrapper {
+        width: 250px;
+    }
+
+    .wrapper .toggled .sidebar-wrapper {
+        width: 0;
+    }
+
+    .page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    .wrapper .toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+/* sidebar */
 /* MEDIA QUERIES */
