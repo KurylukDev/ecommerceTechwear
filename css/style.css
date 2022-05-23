@@ -42,6 +42,7 @@ header a, li, footer a, .fontNav{
 }
 
 header{
+    z-index: 2;
     position: sticky;
     top: 0;
     display: flex;
@@ -180,9 +181,15 @@ Footer{
 }
 
 .cardEstilo{
-    width: 25%;
-    height: 580px;  
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin: 20px 10px;
+}
+
+.cardEstilo img {
+    width: 80%;
+    height: 580px;  
     border: 0.5px black solid;
 }
 
@@ -416,6 +423,7 @@ Footer{
 #email, #nombre, #asunto, #textarea{
     border: 1px black solid;
     background-color: rgba(0, 0, 0, 0.062);
+    height: 100%;
 }
 .boxMailMap{
     border: 2px rgb(187, 187, 187) solid; 
@@ -487,17 +495,20 @@ Footer{
 
 .contenedor{
     background-image: url(../img/backgroundlogin.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
 }
 
 .contenedor img{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
 .loginBox {
+    z-index: 1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -939,15 +950,28 @@ Footer{
     margin: 0;
 }
 }
+
+@media (max-width: 592px){
+    .listaFooter{
+       display: none;
+
+    }
+    iconos {
+        display: inline-block;
+        flex-direction: row;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+    .loginBox {
+        width: 25em;
+      }
+}
 @media (max-width: 576px){
     /* UNIVERSAL */
     .contactoFooter{
         display: flex;
         justify-content: space-around;
-    }
-    .listaFooter{
-        display: none;
-
     }
     footer div a .iconos{
         display: block;
@@ -969,17 +993,8 @@ Footer{
     }
      /* CUENTA */
      .loginBox {
-        position: relative;
-        top: -50%;
-        left: 50%; 
         width: 20em;
-        height: 400px;
-        padding: 40px;
-        transform: translate(-50%, -50%);
-        background: rgba(82, 82, 82, 0.308);
-        box-sizing: border-box;
-        box-shadow: 0 15px 25px rgba(0,0,0,.6);
-        border-radius: 10px;
+        padding: 20px;
       }
       /* CONTACTO */
       .boxInfo p{
@@ -987,9 +1002,6 @@ Footer{
       }
 
       /* CATALOGO */
-      .listaCatalogo{
-          display: none;
-      }
      .gridProductos{
       grid-area: productos;
       }
@@ -1040,23 +1052,9 @@ Footer{
     .producto{
        width: 80vw;
     }
-   .backgroundImg{
-       visibility: hidden;
-    }
 }
 
 /* sidebar */
-@media (max-width: 991px){
-    .loginBox{
-        position: relative;
-        top: -50%;
-        left: 50%;    
-    }
-   .backgroundImg{
-       visibility: hidden;
-    }
-}
-
 @media(min-width:768px) {
     .wrapper {
         padding-left: 250px;
@@ -1082,6 +1080,12 @@ Footer{
     .wrapper .toggled .page-content-wrapper {
         position: relative;
         margin-right: 0;
+    }
+}
+
+@media (max-width: 358px){
+    .loginBox{
+        width: 80vw;
     }
 }
 /* sidebar */
