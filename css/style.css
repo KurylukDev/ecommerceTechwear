@@ -42,7 +42,7 @@ header a, li, footer a, .fontNav{
 }
 
 header{
-    z-index: 2;
+    z-index: 3;
     position: sticky;
     top: 0;
     display: flex;
