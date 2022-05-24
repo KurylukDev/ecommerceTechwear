@@ -798,9 +798,7 @@ Footer{
  /* Carrito */
  .titleCheckout {
     font-size: 40px;
-    background: linear-gradient(to bottom, #acabab 1%, #000000 99%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    border-bottom: #00000021 solid;
 }
 .cartList{
     width: 100%;
