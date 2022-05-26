@@ -1,0 +1,97 @@
+@import "variables";
+@import "typo";
+header {
+	a {
+		font-family: $font;
+		font-weight: 500;
+		font-size: 16px;
+		color: $color_header;
+		text-decoration: none;
+		transition: .5s;
+	}
+}
+li {
+	font-family: $font;
+	font-weight: 500;
+	font-size: 16px;
+	color: $color_header;
+	text-decoration: none;
+	transition: .5s;
+}
+footer {
+	a {
+		font-family: $font;
+		font-weight: 500;
+		font-size: 16px;
+		color: $color_header;
+		text-decoration: none;
+		transition: .5s;
+	}
+}
+.fontNav {
+	font-family: $font;
+	font-weight: 500;
+	font-size: 16px;
+	color: $color_header;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.iconosNav {
+	width: 40px;
+	height: 40px;
+	padding: 1px;
+	margin: 0;
+	&:hover {
+		border-radius: 25%;
+		border: 1px red solid;
+		-webkit-border-radius: 25%;
+		-moz-border-radius: 25%;
+		-ms-border-radius: 25%;
+		-o-border-radius: 25%;
+	}
+}
+.d-flex {
+	margin: 0 auto;
+}
+header {
+	z-index: 100;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $background-black;
+	width: 100%;
+}
+
+
+.btn-outline-success {
+	color: $color_white;
+	border: 1px $color_header solid;
+	&:hover {
+		background-color: $background_red;
+		border: 1px #ffffff solid;
+	}
+}
+.navbar-toggler {
+	background-color: $background-white;
+}
+.navbar-collapse {
+	text-align: center;
+	justify-content: space-between;
+}
+.navbar {
+	width: 100%;
+	li {
+		a {
+			margin-left: 40px;
+			font-size: 20px;
+			&:hover {
+				color: $color_red;
+				cursor: pointer;
+			}
+		}
+	}
+}
+

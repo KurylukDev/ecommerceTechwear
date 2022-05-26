@@ -1,0 +1,40 @@
+@import "variables";
+
+footer {
+	z-index: 10000;
+	position: relative;
+	background-color: $background-black;
+	width: 100%;
+	div {
+		a {
+			.iconos {
+				display: block;
+				width: 40px;
+				height: 40px;
+				padding: 0px 100px 0px 0px;
+			}
+		}
+		p {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+.logo {
+	width: 250px;
+	height: 70px;
+	padding: 1px;
+	margin: 1px;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.listaFooter {
+	li {
+		list-style-type: none;
+		font-size: 10px;
+		padding: 10px;
+	}
+}
