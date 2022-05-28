@@ -9,9 +9,15 @@
   font: inherit;
   vertical-align: baseline; }
 
+* {
+  font-family: "montserrat", sans-serif; }
+
 a {
   text-decoration: none;
   color: white; }
+
+* {
+  font-family: "montserrat", sans-serif; }
 
 a {
   text-decoration: none;
@@ -107,7 +113,7 @@ footer {
     display: block;
     width: 40px;
     height: 40px;
-    padding: 0px 100px 0px 0px; }
+    padding: 0px 0px; }
   footer div p {
     display: flex;
     justify-content: center; }
@@ -118,9 +124,13 @@ footer {
   padding: 1px;
   margin: 1px; }
 
+.logoFooter {
+  width: 100px;
+  height: 50%; }
+
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
 
 .listaFooter li {
@@ -226,8 +236,8 @@ Footer {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), white);
   display: flex;
   justify-content: center;
-  height: 200px;
-  width: 10vw;
+  height: 250px;
+  width: 14vw;
   background-color: rgba(128, 128, 128, 0.11);
   margin: 25px;
   padding: 0;
@@ -308,13 +318,13 @@ Footer {
         text-decoration: none; }
       .sidebar-nav li a:focus {
         text-decoration: none; }
-  .sidebar-nav > .sidebar-brand {
+  .sidebar-nav .sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px; }
-    .sidebar-nav > .sidebar-brand a {
+    .sidebar-nav .sidebar-brand a {
       color: #999999; }
-      .sidebar-nav > .sidebar-brand a:hover {
+      .sidebar-nav .sidebar-brand a:hover {
         color: white;
         background: none; }
 
@@ -811,7 +821,7 @@ Footer {
     padding: 0px 20px 0px 0px; }
   /* INDEX */
   .imagenBan {
-    height: 550px;
+    height: 450px;
     width: 100%; }
   .titulo p {
     font-size: 16px;

@@ -109,8 +109,8 @@ Footer {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgb(255, 255, 255));
 	display: flex;
 	justify-content: center;
-	height: 200px;
-	width: 10vw;
+	height: 250px;
+	width: 14vw;
 	background-color: $background_img;
 	margin: 25px;
 	padding: 0;
@@ -133,19 +133,24 @@ Footer {
 	}
 }
 
+
 /* FINAL DE INDEX */
+
 $background_white: rgba(128, 128, 128, 0.377);
 
 /* INICIO DE CATÁLOGO */
 
 /* SIDEBAR */
+
 .ud {
 	display: flex;
 	flex-direction: row;
 }
+
 .uds {
 	padding: 0 5px;
 }
+
 .wrapper {
 	padding-left: 0;
 	-webkit-transition: all 0.5s ease;
@@ -163,6 +168,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		}
 	}
 }
+
 .sidebar-wrapper {
 	z-index: 1000;
 	position: fixed;
@@ -177,6 +183,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
+
 .sidebar-nav {
 	position: absolute;
 	top: 0;
@@ -204,7 +211,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 			}
 		}
 	}
-	>.sidebar-brand {
+	.sidebar-brand {
 		height: 65px;
 		font-size: 18px;
 		line-height: 60px;
@@ -217,6 +224,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		}
 	}
 }
+
 .dropdownColor {
 	width: 100%;
 	background-color: $background-black;
@@ -224,6 +232,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 	color: $color_gray;
 	border-radius: 0;
 }
+
 .buttonEffect {
 	color: $color_gray;
 	&:hover {
@@ -232,6 +241,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		border-radius: 0;
 	}
 }
+
 /* Productos */
 .producto {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.342));
@@ -243,6 +253,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 	border-radius: 2%;
 	box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
+
 .numeros {
 	a {
 		display: flex;
@@ -257,20 +268,24 @@ $background_white: rgba(128, 128, 128, 0.377);
 /* FIN DE CATÁLOGO */
 
 /* INICIO DE CONTACTO */
+
 .mainInfo {
     display: flex;
 	justify-content: center;
 }
+
 .contenidoInfo {
     display: flex;
 	justify-content: center;
 	margin: 20px;
 	border: 2px rgb(190, 190, 190) solid;
 }
+
 .mapa {
 	width: 100%;
 	height: 400px;
 }
+
 .form {
     border: 1px black solid;
 	background-color: $background_contact;
@@ -283,6 +298,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 	width: 90%;
 	height: 100%;
 }
+
 .boxInfo {
     p {
         font-size: 2em;
@@ -297,15 +313,18 @@ $background_white: rgba(128, 128, 128, 0.377);
 		height: 25px;
 	}
 }
+
 .btnInfo {
 	background-color: $background-black;
 	color: $color_white;
 	cursor: pointer;
 }
+
 .tituloInfo {
     font-size: 2.5em;
 	border-bottom: 2px rgb(204, 204, 204) solid;
 }
+
 .nombre {
     input {
         display: inline-block;
@@ -315,6 +334,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		font-size: 2em;
 	}
 }
+
 .asunto {
 	input {
 		margin: 0px 20px 20px 10%;
@@ -323,6 +343,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		font-size: 2em;
 	}
 }
+
 .textArea {
 	textarea {
         margin: 0px 10px 10px 10%;
@@ -331,6 +352,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		height: 10%;
 	}
 }
+
 .botonInfo {
 	input {
 		margin: 0px 10px 10px 20%;
@@ -338,8 +360,11 @@ $background_white: rgba(128, 128, 128, 0.377);
 		width: 60%;
 	}
 }
+
 /* FIN DE CONTACTO */
+
 /* INICIO DE CUENTA */
+
 .contenedor {
 	background-image: url(../img/backgroundlogin.webp);
 	background-repeat: no-repeat;
@@ -353,6 +378,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		margin: 0;
 	}
 }
+
 .loginBox {
 	z-index: 1;
 	position: absolute;
@@ -373,6 +399,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		color: $color_white;
 		text-align: center;
 	}
+
 	.userBox {
 		position: relative;
 		input {
@@ -417,6 +444,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 			transition: .5s;
 		}
 	}
+
 	form {
 		a {
 			position: relative;
@@ -432,6 +460,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 			letter-spacing: 4px;
 		}
 	}
+
 	a {
 		&:hover {
 			background: #f40303;
@@ -445,6 +474,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		}
 	}
 }
+
 /* FINAL DE CUENTA */
 
 /* INICIO DE PRODUCTO */
@@ -461,14 +491,17 @@ $background_white: rgba(128, 128, 128, 0.377);
 		}
 	}
 }
+
 .rutaLista {
     display: inline-block;
 }
+
 .contenedorProducto {
     display: flex;
 	justify-content: space-around;
 	margin: 40px;
 }
+
 .productosDestacados {
     margin: 20px 10px 40px 10px;
 	h2 {
@@ -480,6 +513,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		border-top: 2px rgb(202, 202, 202) solid;
 	}
 }
+
 .productoInfoHijo {
     .infoColor {
         display: flex;
@@ -489,6 +523,7 @@ $background_white: rgba(128, 128, 128, 0.377);
         width: 80%;
 	}
 }
+
 .infoColor {
     margin: 20px 0 30px 0;
 	border-bottom: 2px rgb(172, 172, 172) solid;
@@ -496,6 +531,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		font-size: 20px;
 	}
 }
+
 .check1 {
     position: absolute;
 	top: 0;
@@ -506,6 +542,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 	border: 1px solid rgb(173, 173, 173);
 	border-radius: 50%;
 }
+
 .check2 {
     position: absolute;
 	top: 0;
@@ -516,6 +553,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 	border: 1px solid rgb(182, 182, 182);
 	border-radius: 50%;
 }
+
 .checkbox1 {
     display: block;
 	position: relative;
@@ -547,6 +585,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		}
 	}
 }
+
 .checkbox2 {
     display: block;
 	position: relative;
@@ -577,16 +616,19 @@ $background_white: rgba(128, 128, 128, 0.377);
 		}
 	}
 }
+
 .imagenPrincipal {
     width: 400px;
 	margin-bottom: 1px;
 	border: 1px black solid;
 }
+
 .imagenSecundaria {
     width: 120px;
 	margin: 5px 5px 0px 0px;
 	border: 1px black solid;
 }
+
 .infoCantidad {
     display: flex;
 	justify-content: space-between;
@@ -596,6 +638,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		font-size: 20px;
 	}
 }
+
 .numberBox {
     border: 1px black solid;
 	border-radius: 20%;
@@ -603,9 +646,11 @@ $background_white: rgba(128, 128, 128, 0.377);
 	width: 40px;
 	height: 20px;
 }
+
 .precio {
     color: $color_black;
 }
+
 .informacionProducto {
     margin: 50px 0px 10px 10px;
 	width: 40%;
@@ -615,6 +660,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		margin: 10px;
 	}
 }
+
 .botonBox {
     display: flex;
 	flex-direction: column;
@@ -627,10 +673,12 @@ $background_white: rgba(128, 128, 128, 0.377);
 		cursor: pointer;
 	}
 }
+
 .btn1 {
     background-color: $background_black;
 	color: $color_white;
 }
+
 .productosImg {
     display: flex;
 	justify-content: center;
@@ -643,22 +691,28 @@ $background_white: rgba(128, 128, 128, 0.377);
 		height: 200px;
 	}
 }
+
 /* FINAL DE PRODUCTO */
+
 /* Carrito */
+
 .titleCheckout {
 	font-size: 40px;
 	background: linear-gradient(to bottom, #acabab 1%, #000000 99%);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 .cartList {
 	width: 100%;
 }
+
 .btn-dark {
 	&:hover {
 		background-color: $color_red;
 	}
 }
+
 /* FIN Carrito */
 
 /* MEDIA QUERIES */
@@ -670,16 +724,19 @@ $background_white: rgba(128, 128, 128, 0.377);
 		padding: 1px;
 		margin: 1px;
 	}
+
     /*CONTACTO */
 	.boxMailMap {
         margin-right: 5%;
 	}
+
 	.boxInfo {
         p {
             font-size: 2.5vw;
 		}
 	}
 }
+
 .productosImg {
     img {
         border: 0.5px rgb(192, 192, 192) solid;
@@ -689,11 +746,13 @@ $background_white: rgba(128, 128, 128, 0.377);
 		height: 200px;
 	}
 }
+
 @media (max-width: 789px) {
 	.producto {
 		margin: 0 auto;
 	}
 }
+
 @media screen and (max-width: 768px) {
         /*UNIVERSAL*/
 	.logo {
@@ -702,6 +761,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 		padding: 0px;
 		margin: 0px;
 	}
+
         /* INDEX */
 	.cardPrincipal {
 		display: flex;
@@ -710,82 +770,103 @@ $background_white: rgba(128, 128, 128, 0.377);
 		margin: 10px 0px;
 		width: 100%;
 	}
+
 	.cardEstilo {
 		width: 80%;
 	}
+
 	.card {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
+
 	.cardBorder {
 		margin: 25px 0px;
 		width: 50%;
 		height: 250px;
 	}
+
     /* CONTACTO */
 	.gridInfo {
 		grid-area: info;
 	}
+
 	.gridMail {
 		grid-area: mail;
 	}
+
 	.gridContacto {
 		display: grid;
 		grid-template-areas: "header header header header" "info info info info" "mail mail mail mail" "footer footer footer footer ";
 	}
+
 	.boxMailMap {
 		margin: 40px 0px 10px 5%;
 	}
+
     /* PRODUCTO */
 	.producto {
 		margin: 10px auto;
 	}
+
 	.gridProducto {
 		grid-area: productoImg;
 	}
+
 	.gridRuta {
 		grid-area: ruta;
 	}
+
 	.gridDestacado {
 		grid-area: destacado;
 	}
+
 	.gridInformacion {
 		grid-area: informacion;
 	}
+
 	.bodyProducto {
 		display: grid;
 		grid-template-areas: "header header header" "ruta ruta ruta" "productoImg productoImg productoImg" "informacion informacion informacion" "destacado destacado destacado" "footer footer footer";
 	}
+
 	.productoInfoHijo {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.productoInformacion {
 		width: 100vw;
 	}
+
 	.imagenPrincipal {
 		margin: 0px;
 		width: 70vw;
 	}
+
 	.imagenSecundaria {
 		width: 20vw;
 	}
+
 	.productosDestacados {
 		width: 90%;
 	}
+
 	.productosImg {
 		Img {
 			width: 12vw;
 			height: 15vh;
 		}
 	}
+
 	.contenedorProducto {
 		width: 90%;
 		margin: 0;
 	}
 }
+
 @media (max-width: 592px) {
     /*FOOTER*/
 	.listaFooter {
@@ -821,9 +902,11 @@ $background_white: rgba(128, 128, 128, 0.377);
 			}
 		}
 	}
+
     /* INDEX */
+
 	.imagenBan {
-		height: 550px;
+		height: 450px;
 		width: 100%;
 	}
 	.titulo {
@@ -832,34 +915,45 @@ $background_white: rgba(128, 128, 128, 0.377);
 			padding: 10px 20px;
 		}
 	}
+
     /*LOGIN*/
+
 	.loginBox {
 		width: 20em;
 		padding: 20px;
 	}
+
     /*CONTACTO*/
+
 	.boxInfo {
 		p {
 			font-size: 4vw;
 		}
 	}
+
     /*CATALOGO*/
+
 	.gridProductos {
 		grid-area: productos;
 	}
+
 	.gridTituloFiltro {
 		grid-area: titulo;
 	}
+
 	.gridCatalogo {
 		display: grid;
 		grid-template-areas: "header header header" "titulo titulo titulo" "productos productos productos" "productos productos productos" "footer footer footer";
 	}
+
 	.producto {
 		margin: 2.5vw;
 	}
+
 	.productosDestacados {
 		width: 90%;
 	}
+
 	.productosImg {
 		Img {
 			width: 15vw;
@@ -867,23 +961,27 @@ $background_white: rgba(128, 128, 128, 0.377);
 			height: 15vh;
 		}
 	}
+
 	.contenedorProducto {
 		width: 80%;
 		margin: 0;
 	}
 }
+
 @media (max-width: 553px) {
     /*CATALOGO*/
 	.producto {
 		width: 40vw;
 	}
 }
+
 @media (max-width: 479px) {
     /*CATALOGO*/
 	.producto {
 		width: 80vw;
 	}
 }
+
 @media (min-width:768px) {
     /*CATALOGO*/
 	.wrapper {
@@ -907,10 +1005,12 @@ $background_white: rgba(128, 128, 128, 0.377);
 		position: relative;
 	}
 }
+
 @media (max-width: 358px) {
     /*LOGIN*/
 	.loginBox {
 		width: 80vw;
 	}
 }
+
 /* FIN DE MEDIA QUERIES */
