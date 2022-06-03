@@ -209,9 +209,9 @@ Footer {
   display: flex;
   justify-content: center; }
 
-.card {
+.cardIndex {
   height: 100%; }
-  .card img {
+  .cardIndex img {
     height: 80%; }
 
 .destacado {
