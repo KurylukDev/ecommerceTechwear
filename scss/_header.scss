@@ -1,10 +1,11 @@
 @import "variables";
 @import "typo";
+@import "maps";
 header {
 	a {
 		font-family: $font;
-		font-weight: 500;
-		font-size: 16px;
+		font-weight: map-get($map: $font-weights, $key: "medium" );
+		font-size: map-get($map: $font-sizes, $key: "medium" );
 		color: $color_header;
 		text-decoration: none;
 		transition: .5s;
@@ -12,8 +13,8 @@ header {
 }
 li {
 	font-family: $font;
-	font-weight: 500;
-	font-size: 16px;
+	font-weight: map-get($map: $font-weights, $key: "medium" );
+	font-size: map-get($map: $font-sizes, $key: "medium" );
 	color: $color_header;
 	text-decoration: none;
 	transition: .5s;
@@ -21,8 +22,8 @@ li {
 footer {
 	a {
 		font-family: $font;
-		font-weight: 500;
-		font-size: 16px;
+		font-weight: map-get($map: $font-weights, $key: "medium" );
+		font-size: map-get($map: $font-sizes, $key: "medium" );
 		color: $color_header;
 		text-decoration: none;
 		transition: .5s;
@@ -30,8 +31,8 @@ footer {
 }
 .fontNav {
 	font-family: $font;
-	font-weight: 500;
-	font-size: 16px;
+	font-weight: map-get($map: $font-weights, $key: "medium" );
+	font-size: map-get($map: $font-sizes, $key: "medium" );	
 	color: $color_header;
 	text-decoration: none;
 	transition: .5s;
@@ -86,7 +87,7 @@ header {
 	li {
 		a {
 			margin-left: 40px;
-			font-size: 20px;
+			font-size: map-get($map: $font-sizes, $key: "bold" );
 			&:hover {
 				color: $color_red;
 				cursor: pointer;
