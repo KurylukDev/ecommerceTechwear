@@ -137,6 +137,8 @@ footer {
   list-style-type: none;
   font-size: 10px;
   padding: 10px; }
+  .listaFooter li a:hover {
+    color: red; }
 
 /* GRID */
 /* GRID UNIVERSAL */
@@ -307,7 +309,7 @@ Footer {
 
 /* Productos */
 .producto {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.342));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.027), rgba(255, 255, 255, 0.151));
   padding: 0px;
   margin: 25px 10px;
   width: 225px;
@@ -643,12 +645,13 @@ Footer {
   display: flex;
   justify-content: center; }
   .productosImg img {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.027), rgba(255, 255, 255, 0.151));
     border: 0.5px silver solid;
     border-radius: 2%;
     margin: 10px 2vw;
     width: 150px;
-    height: 200px; }
+    height: 200px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6); }
 
 /* FINAL DE PRODUCTO */
 /* Carrito */

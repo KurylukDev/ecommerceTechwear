@@ -209,7 +209,7 @@ $background_white: rgba(128, 128, 128, 0.377);
 
 /* Productos */
 .producto {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.068), rgba(255, 255, 255, 0.342));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.027), rgba(255, 255, 255, 0.151));
 	padding: 0px;
 	margin: 25px 10px;
 	width: 225px;
@@ -647,12 +647,13 @@ $background_white: rgba(128, 128, 128, 0.377);
 .productosImg {
 	@include flex-center;
 	img {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(255, 255, 255, 0.342));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.027), rgba(255, 255, 255, 0.151));
 		border: 0.5px rgb(192, 192, 192) solid;
 		border-radius: 2%;
 		margin: 10px 2vw;
 		width: 150px;
 		height: 200px;
+		box-shadow: 0 10px 15px rgba(0,0,0,.6);
 	}
 }
 
