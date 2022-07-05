@@ -308,15 +308,39 @@ Footer {
     border-radius: 0; }
 
 /* Productos */
-.producto {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.027), rgba(255, 255, 255, 0.151));
-  padding: 0px;
-  margin: 25px 10px;
-  width: 225px;
-  height: 250px;
+.cardProduct {
+  width: 80%;
+  margin: 20px;
+  padding-bottom: 0px;
   border: 1px #e6e6e6 solid;
   border-radius: 2%;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); }
+
+.productoBtn {
+  height: 50px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.514);
+  border: 2px white solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px; }
+
+.productoBtn:hover {
+  background-color: rgba(255, 0, 0, 0.714); }
+
+.producto {
+  margin: auto;
+  width: 225px;
+  height: 250px; }
+
+.formCatalogo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0; }
 
 .numeros a {
   display: flex;
@@ -806,7 +830,7 @@ Footer {
   .boxInfo p {
     font-size: 4vw; }
   /*CATALOGO*/
-  .gridProductos {
+  .sectionProducts {
     grid-area: productos; }
   .gridTituloFiltro {
     grid-area: titulo; }
